@@ -229,6 +229,7 @@ h6 {
 .active {
     text-decoration: underline;
     text-decoration-color: #888888;
+    text-underline-offset: 3px;
 }
 
 .carousel__item {
