@@ -24,7 +24,7 @@
                 </div>
                 <div class="mx-auto me-0">
                     <h5 class="font-semibold mb-5 text-white">NEWSLETTER</h5>
-                    <div class="w-56 h-8 border-b border-gray-600">
+                    <div class="w-56 h-8 inputSec">
                         <input type="text" placeholder="email@example.com"
                             class="text-xs w-full h-full placeholder-text bg-transparent border border-transparent focus:outline-0 placeholder-gray-500">
                     </div>
@@ -63,6 +63,12 @@ footer h6 {
     line-height: 30px;
 }
 
+.inputSec {
+    border-bottom: 1px solid #b2b2b2;
+}
+input:focus{
+    border-bottom: 1px solid #717fe0;
+}
 input {
     color: #b2b2b2;
 }

@@ -4,18 +4,14 @@
             <div class="container-lg mx-auto flex justify-between items-center">
                 <p class="text-xs py-2">Free shipping for standard order over $100</p>
                 <div class="flex">
-                    <NuxtLink>
+                    <NuxtLink to="#"> 
                         <p class="text-xs px-5 py-2 border-l border-gray-400">Help & FAQs</p>
                     </NuxtLink>
-                    <NuxtLink>
+                    <NuxtLink to="#">
                         <p class="text-xs px-5 py-2 border-l border-gray-400">My Account</p>
                     </NuxtLink>
-                    <NuxtLink>
-                        <p class="text-xs px-5 py-2 border-l border-gray-400">EN</p>
-                    </NuxtLink>
-                    <NuxtLink>
-                        <p class="text-xs px-5 py-2 border-l border-r border-gray-400">USD</p>
-                    </NuxtLink>
+                    <p class="text-xs px-5 py-2 border-l border-gray-400">EN</p>
+                    <p class="text-xs px-5 py-2 border-l border-r border-gray-400">USD</p>
                 </div>
             </div>
         </div>
