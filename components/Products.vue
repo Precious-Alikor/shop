@@ -1,8 +1,8 @@
 <template>
-    <div class="container-lg mx-auto">
+    <div class="mx-6 lg:mx-32 mx-auto">
 
-        <div class="grid lg:grid-cols-4 gap-6 my-16">
-            <div class="card pb-2">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-16">
+            <div class="card pb-2 ">
                 <img src="../assets/img/product-01.webp" alt="img">
                 <p class="product-name mt-3 leading-6 text-sm">Esprit Ruffle Shirt</p>
                 <p class="product-price mb-2 text-sm">$16.64</p>
@@ -91,7 +91,6 @@
 </script>
 
 <style scoped>
-
 .product-name {
     color: #999999;
 }

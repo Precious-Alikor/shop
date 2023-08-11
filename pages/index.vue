@@ -1,17 +1,18 @@
 <template>
     <div>
         <div class="bg-black text-gray-400">
-            <div class="container-lg mx-auto flex justify-between items-center">
-                <p class="text-xs py-2">Free shipping for standard order over $100</p>
+            <div class="mx-6 lg:mx-32 mx-auto flex flex-col lg:flex-row lg:justify-between lg:items-center"
+                style="font-size: 10px;">
+                <p class="py-2">Free shipping for standard order over $100</p>
                 <div class="flex">
-                    <NuxtLink to="#"> 
-                        <p class="text-xs px-5 py-2 border-l border-gray-400">Help & FAQs</p>
+                    <NuxtLink to="#">
+                        <p class="px-5 py-2 border-l border-gray-400">Help & FAQs</p>
                     </NuxtLink>
                     <NuxtLink to="#">
-                        <p class="text-xs px-5 py-2 border-l border-gray-400">My Account</p>
+                        <p class="px-5 py-2 border-l border-gray-400">My Account</p>
                     </NuxtLink>
-                    <p class="text-xs px-5 py-2 border-l border-gray-400">EN</p>
-                    <p class="text-xs px-5 py-2 border-l border-r border-gray-400">USD</p>
+                    <p class="px-5 py-2 border-l border-gray-400">EN</p>
+                    <p class="px-5 py-2 border-l border-r border-gray-400">USD</p>
                 </div>
             </div>
         </div>
@@ -19,6 +20,7 @@
 
         <div class="grid lg:grid-cols-1">
             <Carousel :autoplay="2000" :items-to-show="1" :wrap-around="true">
+
                 <Slide :key="1">
                     <div class="card-one grid lg:grid-cols-2">
                         <div class="flex items-center">
@@ -60,8 +62,8 @@
         </div>
 
 
-        <div class="container-lg mx-auto">
-            <div class="grid lg:grid-cols-3 gap-6 my-20 catalog">
+        <div class="mx-6 lg:mx-32 mx-auto">
+            <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-6 my-20 catalog">
                 <NuxtLink to="#">
                     <div class="border border-gray-200 relative">
                         <div class="absolute top-8 left-8">
@@ -93,22 +95,28 @@
         </div>
 
 
-        <div class="container-lg mx-auto">
-            <h1 class="text-3xl font-bold">PRODUCT OVERVIEW</h1>
+        <div class="mx-6 lg:mx-32 mx-auto">
+            <h1 class=" text-xl md:text-3xl lg:text-3xl font-bold">PRODUCT OVERVIEW</h1>
             <div class="flex lg:justify-between mt-7">
-                <div class="flex">
-                    <h6 class="me-6 text-sm" @click="toggleType(OPTION_1)" :class="type === OPTION_1 ? 'active' : ''">
+                <div class="flex flex-wrap">
+                    <h6 class="me-6 text-sm leading-8" @click="toggleType(OPTION_1)"
+                        :class="type === OPTION_1 ? 'active' : ''">
                         All
                         Products</h6>
-                    <h6 class="me-6 text-sm" @click="toggleType(OPTION_2)" :class="type === OPTION_2 ? 'active' : ''">
+                    <h6 class="me-6 text-sm leading-8" @click="toggleType(OPTION_2)"
+                        :class="type === OPTION_2 ? 'active' : ''">
                         Women</h6>
-                    <h6 class="me-6 text-sm" @click="toggleType(OPTION_3)" :class="type === OPTION_3 ? 'active' : ''">
+                    <h6 class="me-6 text-sm leading-8" @click="toggleType(OPTION_3)"
+                        :class="type === OPTION_3 ? 'active' : ''">
                         Men</h6>
-                    <h6 class="me-6 text-sm" @click="toggleType(OPTION_4)" :class="type === OPTION_4 ? 'active' : ''">
+                    <h6 class="me-6 text-sm leading-8" @click="toggleType(OPTION_4)"
+                        :class="type === OPTION_4 ? 'active' : ''">
                         Bag</h6>
-                    <h6 class="me-6 text-sm" @click="toggleType(OPTION_5)" :class="type === OPTION_5 ? 'active' : ''">
+                    <h6 class="me-6 text-sm leading-8" @click="toggleType(OPTION_5)"
+                        :class="type === OPTION_5 ? 'active' : ''">
                         Shoes</h6>
-                    <h6 class="text-sm" @click="toggleType(OPTION_6)" :class="type === OPTION_6 ? 'active' : ''">Watch
+                    <h6 class="text-sm leading-8" @click="toggleType(OPTION_6)" :class="type === OPTION_6 ? 'active' : ''">
+                        Watch
                     </h6>
                 </div>
                 <div class="flex">
@@ -179,6 +187,10 @@ const OPTION_6 = tabs[5]
 </script>
 
 <style scoped>
+.nav-menu h6 {
+    font-size: 12px;
+}
+
 .card-one {
     width: 100%;
     height: 85vh;
@@ -186,7 +198,8 @@ const OPTION_6 = tabs[5]
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 0 8rem;
+    /* padding: 0 8rem; */
+    animation-delay: 4s;
 }
 
 .card-two {
@@ -195,7 +208,8 @@ const OPTION_6 = tabs[5]
     background-image: url(../assets/img/mens-new-season.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0 8rem;
+    /* padding: 0 8rem; */
+    animation-delay: 4s;
 }
 
 .card-three {
@@ -204,7 +218,8 @@ const OPTION_6 = tabs[5]
     background-image: url(../assets/img/womens-new-season.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0 8rem;
+    /* padding: 0 8rem; */
+    animation-delay: 4s;
 }
 
 .card-text h1 {
@@ -247,5 +262,4 @@ h6 {
 
 button {
     background-color: #717fe0;
-}
-</style>
+}</style>

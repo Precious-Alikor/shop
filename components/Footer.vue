@@ -1,30 +1,31 @@
 <template>
     <footer class="py-16">
-        <div class="container-lg">
-            <div class="grid lg:grid-cols-4">
-                <div>
-                    <h5 class="font-semibold mb-5 text-white">CATEGORIES</h5>
+        <div class="mx-6 lg:mx-32">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4">
+                <div class="mb-12 lg:mb-0">
+                    <h5 class="font-semibold mb-2 mb-6 md:md-5 lg:mb-5 text-white">CATEGORIES</h5>
                     <h6>Women</h6>
                     <h6>Men</h6>
                     <h6>Shoes</h6>
                     <h6>Watches</h6>
                 </div>
-                <div>
-                    <h5 class="font-semibold mb-5 text-white">HELP</h5>
+                <div class="mb-12 lg:mb-0">
+                    <h5 class="font-semibold mb-2 mb-6 md:md-5 lg:mb-5 text-white">HELP</h5>
                     <h6>Track Order</h6>
                     <h6>Returns</h6>
                     <h6>Shipping</h6>
                     <h6>FAQs</h6>
                 </div>
-                <div>
-                    <h5 class="font-semibold mb-5 text-white">GET IN TOUCH</h5>
-                    <h6>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on
+                <div class="mb-12 lg:mb-0">
+                    <h5 class="font-semibold mb-2 mb-6 md:md-5 lg:mb-5 text-white">GET IN TOUCH</h5>
+                    <h6 class="md:pe-10">Any questions? Let us know in
+                        store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on
                         (+1)
                         96 716 6879</h6>
                 </div>
-                <div class="mx-auto me-0">
-                    <h5 class="font-semibold mb-5 text-white">NEWSLETTER</h5>
-                    <div class="w-56 h-8 inputSec">
+                <div class="mb-12 lg:mb-0 lg:ps-10">
+                    <h5 class="font-semibold mb-2 mb-6 md:md-5 lg:mb-5 text-white">NEWSLETTER</h5>
+                    <div class="w-11/12 h-8 inputSec">
                         <input type="text" placeholder="email@example.com"
                             class="text-xs w-full h-full placeholder-text bg-transparent border border-transparent focus:outline-0 placeholder-gray-500">
                     </div>
@@ -66,9 +67,11 @@ footer h6 {
 .inputSec {
     border-bottom: 1px solid #b2b2b2;
 }
-input:focus{
+
+input:focus {
     border-bottom: 1px solid #717fe0;
 }
+
 input {
     color: #b2b2b2;
 }
@@ -79,5 +82,4 @@ input {
 
 button {
     background-color: #717fe0;
-}
-</style>
+}</style>
