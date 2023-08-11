@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="bg-black text-gray-400">
-            <div class="mx-6 lg:mx-32 mx-auto flex flex-col lg:flex-row lg:justify-between lg:items-center"
+            <div class="mx-6 lg:mx-32 flex flex-col lg:flex-row lg:justify-between lg:items-center"
                 style="font-size: 10px;">
                 <p class="py-2">Free shipping for standard order over $100</p>
                 <div class="flex">
@@ -62,7 +62,7 @@
         </div>
 
 
-        <div class="mx-6 lg:mx-32 mx-auto">
+        <div class="mx-6 lg:mx-32">
             <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-6 my-20 catalog">
                 <NuxtLink to="#">
                     <div class="border border-gray-200 relative">
@@ -95,7 +95,7 @@
         </div>
 
 
-        <div class="mx-6 lg:mx-32 mx-auto">
+        <div class="mx-6 lg:mx-32">
             <h1 class=" text-xl md:text-3xl lg:text-3xl font-bold">PRODUCT OVERVIEW</h1>
             <div class="flex lg:justify-between mt-7">
                 <div class="flex flex-wrap">

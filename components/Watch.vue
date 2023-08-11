@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="mx-6 lg:mx-32 mx-auto">
+        <div class="mx-6 lg:mx-32">
             <div class="grid lg:grid-cols-4 gap-6 my-16">
                 <div class="card pb-2">
                     <img src="../assets/img/product-06.webp" alt="img">
