@@ -1,22 +1,8 @@
 <template>
     <div>
-        <div class="bg-black text-gray-400">
-            <div class="mx-6 lg:mx-32 flex flex-col lg:flex-row lg:justify-between lg:items-center"
-                style="font-size: 10px;">
-                <p class="py-2">Free shipping for standard order over $100</p>
-                <div class="flex">
-                    <NuxtLink to="#">
-                        <p class="px-5 py-2 border-l border-gray-400">Help & FAQs</p>
-                    </NuxtLink>
-                    <NuxtLink to="#">
-                        <p class="px-5 py-2 border-l border-gray-400">My Account</p>
-                    </NuxtLink>
-                    <p class="px-5 py-2 border-l border-gray-400">EN</p>
-                    <p class="px-5 py-2 border-l border-r border-gray-400">USD</p>
-                </div>
-            </div>
-        </div>
+        <Heading />
 
+        <Navbar />
 
         <div class="grid lg:grid-cols-1">
             <Carousel :autoplay="2000" :items-to-show="1" :wrap-around="true">
@@ -235,12 +221,14 @@ h3 {
 h6 {
     color: #888888;
     cursor: pointer;
+    font-size: 12px;
 }
 
 .active {
     text-decoration: underline;
     text-decoration-color: #888888;
     text-underline-offset: 3px;
+    color: #000;
 }
 
 .carousel__item {
@@ -262,4 +250,5 @@ h6 {
 
 button {
     background-color: #717fe0;
-}</style>
+}
+</style>

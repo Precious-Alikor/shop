@@ -21,4 +21,11 @@
 
 </script>
 
-<style scoped></style>
+<style scoped>
+.product-name {
+    color: #999999;
+}
+
+.product-price {
+    color: #666666;
+}</style>
