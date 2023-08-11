@@ -102,7 +102,7 @@
                         :class="type === OPTION_5 ? 'active' : ''">
                         Shoes</h6>
                     <h6 class="text-sm leading-8" @click="toggleType(OPTION_6)" :class="type === OPTION_6 ? 'active' : ''">
-                        Watch
+                        Watches
                     </h6>
                 </div>
                 <div class="flex">
